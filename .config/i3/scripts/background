@@ -1,0 +1,2 @@
+xwinwrap -ov -fs -- \
+    /usr/lib/xscreensaver/glslideshow -window-id WID -zoom 100 -duration 600
