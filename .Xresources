@@ -83,7 +83,7 @@ URxvt*background: #2f343f
 
 URxvt*skipBuiltInGlyphs: true
 
-URxvt*font:xft:Bitstream Vera Sans Mono:size=9
+URxvt*font:xft:Bitstream Vera Sans Mono:size=9, xft:Inconsolata\ for\ Powerline:size=9
 URxvt*boldFont: xft:bitstream vera sans mono:bold:antialias=true
 URxvt*letterSpace: 0
 
