@@ -12,6 +12,7 @@
 !.config/powerline
 !.config/ranger
 .config/ranger/bookmarks
+.config/ranger/history
 
 !.gitignore
 
