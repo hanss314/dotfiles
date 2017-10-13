@@ -11,6 +11,7 @@
 !.config/i3
 !.config/powerline
 !.config/ranger
+.config/ranger/bookmarks
 
 !.gitignore
 
