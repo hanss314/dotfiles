@@ -1,9 +1,9 @@
 #!/bin/bash
 
 if [[ $(iwgetid -r) == "" ]]; then
-    echo "WifiDown" 
+	echo "WifiDown" 
 else
-	echo \"$(iwgetid -r)\"  $(ip -o -4 addr show dev wlp2s0 |python -c "print(__import__('sys').stdin.read().split()[3].split('/')[0])")
+	echo \"$(iwgetid -r | cut -c 1-4)..\"  $(iwconfig | grep -o -P "(?<=Bit Rate:)[0-9]* .b/s") 
 fi
 
 case $BLOCK_BUTTON in
