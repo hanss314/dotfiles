@@ -3,7 +3,7 @@
 if [[ $(iwgetid -r) == "" ]]; then
 	echo "WifiDown" 
 else
-	echo \"$(iwgetid -r | cut -c 1-4)..\"  $(iwconfig | grep -o -P "(?<=Bit Rate:)[0-9]* .b/s") 
+	echo $(iwgetid -r | cut -c 1-4).. $(iwconfig | grep -o -P "(?<=Bit Rate:)[0-9]* .b/s") 
 fi
 
 case $BLOCK_BUTTON in
