@@ -13,6 +13,8 @@
 !.config/ranger
 .config/ranger/bookmarks
 .config/ranger/history
+.config/gtk-2.0/gtkfilechooser.ini
+
 
 !.gitignore
 
