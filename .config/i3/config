@@ -272,7 +272,7 @@ assign [class="Rhythmbox"] $ws0
 exec --no-startup-id discord-canary
 assign [class="discord"] $ws9
 
-assign [class="kate"] $ws3
+assign [class="jetbrains-pycharm"] $ws3
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
 # keysym-based config which used their favorite modifier (alt or windows)

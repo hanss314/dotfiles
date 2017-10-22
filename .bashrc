@@ -7,7 +7,7 @@
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
-neofetch
+neofetch --block_range 0 16
 
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
