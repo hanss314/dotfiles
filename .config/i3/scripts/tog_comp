@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if pgrep -x "compton" > /dev/null 
+then
+	killall -r "compton"
+else
+	compton --config ~/.config/compton/compton.conf -b
+fi

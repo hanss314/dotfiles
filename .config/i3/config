@@ -255,7 +255,9 @@ exec_always xrdb -nocpp ~/.Xresources
 for_window [class=".*"] border pixelx 4; floating default;
 hide_edge_borders both
 
-exec --no-startup-id  compton --config ~/.config/compton/compton.conf -b
+exec --no-startup-id compton --config ~/.config/compton/compton.conf -b
+
+bindsym $mod+c exec ~/.config/i3/scripts/tog_comp
 
 exec --no-startup-id urxvt -name ranger -e ranger
 
