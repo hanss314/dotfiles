@@ -8,11 +8,12 @@
 !.config/compton/
 !.config/gtk-2.0/
 !.config/gtk-3.0/
-!.config/i3/
-!.config/i3/scripts/
+!.config/i3/*
+!.config/i3/**
 !.config/powerline/
 !.config/ranger/
 
+.config/i3/scripts/clipboard/pastes
 .config/ranger/bookmarks/
 .config/ranger/history/
 .config/gtk-2.0/gtkfilechooser.ini

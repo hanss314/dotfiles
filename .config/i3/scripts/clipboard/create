@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd $(dirname $0)
+
+name=`zenity --entry --title="Create label" --text="Enter label"`
+binding=`zenity --entry --title="Create label" --text="Enter text"`
+
+source ./pastes
+
+pastes["$name"]="$binding"
+
+declare -p pastes > ./pastes
+

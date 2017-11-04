@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd $(dirname $0)
+
+name=`zenity --entry --title="Copy label" --text="Enter label"`
+source ./pastes
+text=${pastes["$name"]}
+echo "$text"
+echo "$text" | xclip -selection clipboard
