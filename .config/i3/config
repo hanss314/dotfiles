@@ -270,6 +270,7 @@ assign [class="URxvt"] $ws4
 
 exec --no-startup-id google-chrome-stable
 assign [class="Google-chrome"] $ws2
+assign [class="Firefox"] $ws2
 
 exec --no-startup-id rhythmbox
 assign [class="Rhythmbox"] $ws0
