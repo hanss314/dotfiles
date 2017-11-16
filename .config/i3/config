@@ -268,8 +268,7 @@ exec --no-startup-id urxvt
 assign [instance="ranger"] $ws1
 assign [class="URxvt"] $ws4
 
-exec --no-startup-id google-chrome-stable
-assign [class="Google-chrome"] $ws2
+exec --no-startup-id firefox
 assign [class="Firefox"] $ws2
 
 exec --no-startup-id rhythmbox
