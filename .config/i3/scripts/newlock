@@ -28,9 +28,9 @@ done
 wallpaper=`bgctl info | sed -n -e "s/^Current Wallpaper: \+\(.*\)/\1/p"`
 killall -r "compton"
 scrot "$tmpbg"
-compton --config ~/.config/compton/compton.conf -b
 python3 ~/.config/i3/scripts/makepic.py $wallpaper $args
 icon=`ls $HOME/Pictures/locks/*.png | shuf -n 1`
 convert "$tmpbg" "$icon" -gravity center -composite -matte "$tmpbg"
 i3lock -u -i "$tmpbg"
+compton --config ~/.config/compton/compton.conf -b
 
