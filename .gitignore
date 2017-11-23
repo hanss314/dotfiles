@@ -9,6 +9,7 @@
 !.config/gtk-2.0/
 !.config/gtk-3.0/
 !.config/i3/*
+!.config/i3/scripts/*
 !.config/i3/**
 !.config/powerline/
 !.config/ranger/

@@ -204,7 +204,7 @@ set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
 set $indicator           #FF0000
 
-bindsym $mod+Shift+x exec ~/.config/i3/scripts/lock
+bindsym $mod+Shift+x exec $HOME/.config/i3/scripts/newlock
 # bindsym $mod+d exec dmenu_run -i -b -nb '2f343f' -nf '#676E7D' -sb '#2f343f' -sf '#f3f4f5'
 
 # bindsym $mod+d exec "dmenu_run "
