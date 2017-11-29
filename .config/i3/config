@@ -37,7 +37,7 @@ set $right l
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -262,11 +262,11 @@ exec --no-startup-id compton --config ~/.config/compton/compton.conf -b
 
 bindsym $mod+c exec ~/.config/i3/scripts/tog_comp
 
-exec --no-startup-id urxvt -name ranger -e ranger
+exec --no-startup-id xfce4-terminal -name ranger -e ranger
+exec --no-startup-id xfce4-terminal
 
-exec --no-startup-id urxvt
 assign [instance="ranger"] $ws1
-assign [class="URxvt"] $ws4
+assign [class="Xfce4-terminal"] $ws4
 
 exec --no-startup-id firefox
 assign [class="Firefox"] $ws2

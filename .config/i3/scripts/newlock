@@ -14,7 +14,7 @@ do
 	if [ $win == `xdotool getactivewindow` ] 
 	then
 		class=`xprop -id $win | sed -n -e "s/^WM_CLASS(STRING) = \".*\", \"\(.*\)\"/\1/p"`
-		if [  $class == "URxvt" ]
+		if [  $class == "Xfce4-terminal" ]
 		then
 			dim="$dim 230"
 		else

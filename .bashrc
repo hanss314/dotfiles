@@ -12,8 +12,8 @@ export EDITOR=vim
 # No colors in tty
 [[ `tty` == "/dev/tty"* ]] && return
 
-alias clear='clear && neofetch --ascii_colors 5 5'
-neofetch --ascii_colors 5 5 
+alias clear='clear && neofetch'
+neofetch
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1

@@ -15,7 +15,7 @@ for n, arg in enumerate(sys.argv[2:]):
         dims.append(tuple(curr))
         curr = []
 
-dims.append((0, 746, 1366, 768, 256))
+dims.append((0, 745, 1366, 768, 256))
 base = Image.open(wallpaper).resize((1366, 768), Image.LINEAR)
 screen = Image.open('/tmp/screen.png')
 for dim in dims:
