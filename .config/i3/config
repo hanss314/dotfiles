@@ -186,7 +186,7 @@ bindsym $mod+r mode "resize"
 #Set the gaps
 smart_gaps on
 gaps inner 8
-gaps outer -3
+gaps outer -4
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
@@ -262,6 +262,7 @@ exec --no-startup-id compton --config ~/.config/compton/compton.conf -b
 
 bindsym $mod+c exec ~/.config/i3/scripts/tog_comp
 
+exec --no-startup-id mpd
 exec --no-startup-id xfce4-terminal -T ranger -e ranger
 exec --no-startup-id xfce4-terminal
 exec --no-startup-id xfce4-terminal -T ncmpcpp -e ncmpcpp
