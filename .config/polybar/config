@@ -16,7 +16,7 @@ foreground = #f3f4f5
 foreground-alt = #676e7d
 primary = #ffb52a
 secondary = #e60053
-alert = #bd2c40
+alert = #e53935
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -137,13 +137,13 @@ label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
 label-urgent = %name%
-label-urgent-background = ${module/bspwm.label-urgent-background}
+label-urgent-underline = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
 [module/mpd]
 type = internal/mpd
 format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
-label-song = %title%
+label-song = %artist% - %title%
 
 icon-prev = 
 icon-stop = 
@@ -179,9 +179,10 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
+format = <label>
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #f90000
-label = %percentage:2%%
+label = %percentage%%
 
 [module/memory]
 type = internal/memory
@@ -233,8 +234,8 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date = "%y/%m/%d" 
-date-alt = "%y/%m/%d" %H:%M:%S
+date = "%m/%d" 
+date-alt = "%m/%d"
 
 time = %H:%M:%S
 time-alt = %H:%M:%S
@@ -248,15 +249,15 @@ label = %date% %time%
 [module/volume]
 type = internal/volume
 
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL
+format-volume = <bar-volume>
+label-volume = %percentage%
 label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}
 label-muted = sound muted
 
-bar-volume-width = 10
+bar-volume-width = 5
 bar-volume-foreground-0 = #55aa55
 bar-volume-foreground-1 = #55aa55
 bar-volume-foreground-2 = #55aa55
@@ -278,27 +279,19 @@ type = internal/battery
 battery = BAT1
 adapter = ACAD
 full-at = 98
+time-format = "%H:%M"
 
-format-charging = <animation-charging> <label-charging>
+format-charging =  <label-charging>
 format-charging-underline = #ffb52a
+label-charging = %percentage%%(%time%)
 
-format-discharging = <ramp-capacity> <label-discharging>
+format-discharging =  <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
+label-discharging = %percentage%%(%time%)
 
-format-full-prefix = " "
+format-full = "100%"
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
-
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.foreground-alt}
-
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-foreground = ${colors.foreground-alt}
-animation-charging-framerate = 750
 
 [module/temperature]
 type = internal/temperature
