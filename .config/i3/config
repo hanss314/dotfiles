@@ -263,10 +263,9 @@ exec --no-startup-id compton --config ~/.config/compton/compton.conf -b
 
 bindsym $mod+c exec ~/.config/i3/scripts/tog_comp
 
-exec --no-startup-id mpd
 exec --no-startup-id xfce4-terminal -T ranger -e ranger
 exec --no-startup-id xfce4-terminal
-exec --no-startup-id xfce4-terminal -T ncmpcpp -e ncmpcpp
+exec --no-startup-id xfce4-terminal -T ncmpcpp -e mpd && ncmpcpp
 
 assign [title="ncmpcpp"] $ws0
 assign [title="ranger"] $ws1
