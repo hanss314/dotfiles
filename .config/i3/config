@@ -231,6 +231,7 @@ bar {
 		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
 	}
 }
+# exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 bindsym Print exec scrot ~/Pictures/screenshots/%Y-%m-%d-%T-screenshot.png
 bindsym Ctrl+$mod+c exec ~/.config/i3/scripts/clipboard/create
