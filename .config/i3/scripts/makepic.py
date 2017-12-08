@@ -28,5 +28,10 @@ for dim in dims:
     win.putalpha(mask)
     base.paste(win, dim[0:2], win)
 
+if len(dims) == 1:
+    w, h = base.size
+    base = base.resize((w//20, h//20), Image.LINEAR).resize((w, h), Image.NEAREST)
+ 
+
 base.save('/tmp/screen.png')
 
