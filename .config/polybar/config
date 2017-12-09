@@ -26,7 +26,6 @@ height = 22
 ;offset-y = 1%
 
 fixed-center = false
-
 bottom = true
 
 background = ${colors.background}
@@ -111,7 +110,7 @@ index-sort = true
 wrapping-scroll = false
 
 ; Only show workspaces on the same output as the bar
-;pin-workspaces = true
+pin-workspaces = true
 
 label-mode-padding = 2
 label-mode-foreground = #000
@@ -252,7 +251,7 @@ label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}
-label-muted = sound muted
+label-muted =mute
 
 bar-volume-width = 5
 bar-volume-foreground-0 = #55aa55
