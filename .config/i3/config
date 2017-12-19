@@ -308,6 +308,7 @@ mode "moveit" {
     bindsym $down move down 20px
     bindsym $right move right 20px
     bindsym $mod+m mode "default"
+    bindsym Escape mode "default"
 }
 bindsym $mod+m focus floating; mode "moveit"
 
@@ -316,8 +317,9 @@ bindsym $mod+m focus floating; mode "moveit"
 exec_always --no-startup-id bgchd -rpl -intv 5m -dir ~/Pictures/Wallpapers -bcknd feh
 
 exec_always xrdb -nocpp ~/.Xresources
-for_window [class=".*"] border pixelx 4; floating default;
-hide_edge_borders both
+for_window [class="*"] border pixelx 4; floating default;
+hide_edge_borders yes
+new_window none
 
 exec --no-startup-id compton --config ~/.config/compton/compton.conf -b
 
