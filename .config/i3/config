@@ -257,6 +257,12 @@ bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
 bindsym XF86MonBrightnessUp exec xbacklight -inc 2k0 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
+# mpd control
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioPrev exec mpc prev
+bindsym XF86AudioNext exec mpc next
+
+
 set $bg-color 	         #2f343f
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
