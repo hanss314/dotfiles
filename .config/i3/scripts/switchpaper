@@ -1,0 +1,9 @@
+#!/bin/bash
+
+dir=`bgctl info | sed -n -e "s/^Wallpaper Directory: \+\(.*\)/\1/p"`
+if [[ $dir == *'/Wallpapers' ]] 
+then
+	bgctl config -dir ~/Pictures/NoJudge
+else 
+	bgctl config -dir ~/Pictures/Wallpapers
+fi

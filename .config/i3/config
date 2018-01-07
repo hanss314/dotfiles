@@ -321,6 +321,7 @@ bindsym $mod+m focus floating; mode "moveit"
 # exec_always feh --bg-scale ~/Pictures/Wallpapers/yuyukoyoumu.jpg 
 # exec_always ~/.config/i3/scripts/background
 exec_always --no-startup-id bgchd -rpl -intv 5m -dir ~/Pictures/Wallpapers -bcknd feh
+bindsym $mod+b exec ~/.config/i3/scripts/switchpaper
 
 exec_always xrdb -nocpp ~/.Xresources
 for_window [class="*"] border pixelx 4; floating default;
