@@ -10,12 +10,14 @@
 !.config/gtk-3.0/settings.ini
 !.config/i3/*
 !.config/i3/scripts/*
-!.config/i3/**
+!.config/i3/*
+!.config/bspwm/*
+!.config/sxhkd/*
 !.config/powerline/
 !.config/ranger/
 !.config/xfce4/terminal/terminalrc
 
-.config/i3/scripts/clipboard/pastes
+.config/*/scripts/clipboard/pastes
 .config/ranger/bookmarks/
 .config/ranger/history/
 .config/gtk-2.0/gtkfilechooser.ini
