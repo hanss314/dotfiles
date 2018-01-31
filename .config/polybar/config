@@ -38,9 +38,9 @@ line-color = #f00
 #border-color = #00000000
 
 padding-left = 0
-padding-right = 2
+padding-right = 0
 
-module-margin-left = 1
+module-margin-left = 0
 module-margin-right = 2
 
 font-0 = fixed:pixelsize=10;1
@@ -78,8 +78,10 @@ label = %title:0:30:...%
 type = internal/fs
 interval = 25
 
-mount-0 = /
+mount-0 = /tmp
+mount-1 = /
 
+spacing=4
 label-mounted = %mountpoint%: %free%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
