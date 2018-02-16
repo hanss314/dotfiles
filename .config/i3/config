@@ -324,7 +324,7 @@ exec_always --no-startup-id bgchd -rpl -intv 5m -dir ~/Pictures/Wallpapers -bckn
 bindsym $mod+b exec ~/.config/i3/scripts/switchpaper
 
 exec_always xrdb -nocpp ~/.Xresources
-for_window [class="*"] border pixelx 4; floating default;
+for_window [class="*"] border pixelx 0; floating default;
 hide_edge_borders yes
 new_window none
 
