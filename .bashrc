@@ -9,8 +9,18 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$' 
 export EDITOR=vim
 
+TFALIAS='oops'
+eval $(thefuck --alias $TFALIAS)
+alias crap='$TFALIAS'
+alias f='$TFALIAS'
+
+alias clr='/bin/clear'
+
+. /home/hanss/torch/install/bin/torch-activate
+
 # No colors in tty
 [[ `tty` == "/dev/tty"* ]] && return
+[[ "$TERM" = "screen" ]] && [[ -n "$TMUX" ]] && return
 
 alias clear='clear && neofetch'
 neofetch
