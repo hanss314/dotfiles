@@ -259,7 +259,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 
 # mpd control
 bindsym XF86AudioPlay exec mpc toggle
-bindsym XF86AudioPrev exec mpc prev
+bindsym XF86AudioPrev exec mpc cdprev
 bindsym XF86AudioNext exec mpc next
 
 
