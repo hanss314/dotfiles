@@ -21,11 +21,12 @@ TFALIAS='oops'
 eval $(thefuck --alias $TFALIAS)
 alias crap='$TFALIAS'
 alias f='$TFALIAS'
-
+alias sudo='sudo '
 alias clr='/bin/clear'
 
 . /home/hanss/torch/install/bin/torch-activate
 
+alias dd='safer_dd'
 # No colors in tty
 [[ `tty` == "/dev/tty"* ]] && return
 [[ "$TERM" = "screen" ]] && [[ -n "$TMUX" ]] && return
