@@ -11,7 +11,6 @@ zstyle ':completion:*' menu yes select
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
-
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'

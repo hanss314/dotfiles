@@ -165,6 +165,7 @@ _powerline_setup_prompt() {
 		add_args+=' --width=$(( ${COLUMNS:-$(_powerline_columns_fallback)} - ${ZLE_RPROMPT_INDENT:-1} ))'
 		local add_args_r2=$add_args$new_args_2
 		typeset -g PS1='$("$POWERLINE_COMMAND" $=POWERLINE_COMMAND_ARGS shell aboveleft '$add_args')'
+        typeset -g RPS1='[%?]'
 #       typeset -g RPS1='$("$POWERLINE_COMMAND" $=POWERLINE_COMMAND_ARGS shell right '$add_args')'
 #		typeset -g PS2='$("$POWERLINE_COMMAND" $=POWERLINE_COMMAND_ARGS shell left '$add_args_2')'
 #		typeset -g RPS2='$("$POWERLINE_COMMAND" $=POWERLINE_COMMAND_ARGS shell right '$add_args_r2')'
