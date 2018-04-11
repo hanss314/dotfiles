@@ -34,6 +34,6 @@ alias dd='safer_dd'
 alias clear='clear && neofetch'
 neofetch
 powerline-daemon -q
-POWERLINE_DISABLE_RPROMPT="true"
-. /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
+#POWERLINE_DISABLE_RPROMPT="true"
+. $HOME/.config/powerline/themes/shell/powerline.zsh
 
