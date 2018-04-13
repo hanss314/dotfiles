@@ -43,5 +43,11 @@
         "priority": 10
       }
     ]
+    "right": [
+        {
+            "function": "powerline.segments.common.time",
+            "priority", 10
+        }
+    ]
   }
 }

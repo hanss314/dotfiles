@@ -12,7 +12,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 [[ $- != *i* ]] && return
-
+ZLE_RPROMPT_INDENT=0
 alias ls='ls --color=auto'
 export EDITOR=vim
 

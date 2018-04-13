@@ -158,15 +158,16 @@ _powerline_setup_prompt() {
 		add_args+=' --jobnum=$_POWERLINE_JOBNUM'
 		add_args+=' --renderer-arg="mode=$_POWERLINE_MODE"'
 		add_args+=' --renderer-arg="default_mode=$_POWERLINE_DEFAULT_MODE"'
-		local new_args_2=' --renderer-arg="parser_state=${(%%):-%_}"'
+		local new_args_2=' --renderer-arg="parser_state=${(%%):-%_}"po'
 		new_args_2+=' --renderer-arg="local_theme=continuation"'
 		local add_args_3=$add_args' --renderer-arg="local_theme=select"'
 		local add_args_2=$add_args$new_args_2
 		add_args+=' --width=$(( ${COLUMNS:-$(_powerline_columns_fallback)} - ${ZLE_RPROMPT_INDENT:-1} ))'
-		local add_args_r2=$add_args$new_args_2
+		local add_args_r2='-r .zsh '
 		typeset -g PS1='$("$POWERLINE_COMMAND" $=POWERLINE_COMMAND_ARGS shell aboveleft '$add_args')'
-        typeset -g RPS1='[%?]'
-#       typeset -g RPS1='$("$POWERLINE_COMMAND" $=POWERLINE_COMMAND_ARGS shell right '$add_args')'
+        typeset -g RPS1='%D{%M:%S}[%?]'
+        typeset -g RPS1=$'%F{blue}\ue0b2'"%F{white}%K{blue} %D{%M:%S} "$'%F{red}\ue0b2'"%F{black}%K{red} %? %k%f"
+#       typeset -g RPS1='$("$POWERLINE_COMMAND" $=POWERLINE_COMMAND_ARGS shell right '$add_args_r2')[%?]'
 #		typeset -g PS2='$("$POWERLINE_COMMAND" $=POWERLINE_COMMAND_ARGS shell left '$add_args_2')'
 #		typeset -g RPS2='$("$POWERLINE_COMMAND" $=POWERLINE_COMMAND_ARGS shell right '$add_args_r2')'
 #		typeset -g PS3='$("$POWERLINE_COMMAND" $=POWERLINE_COMMAND_ARGS shell left '$add_args_3')'
