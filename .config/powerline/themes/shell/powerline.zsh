@@ -166,7 +166,7 @@ _powerline_setup_prompt() {
 		local add_args_r2='-r .zsh '
 		typeset -g PS1='$("$POWERLINE_COMMAND" $=POWERLINE_COMMAND_ARGS shell aboveleft '$add_args') %k%f'
         typeset -g RPS1='%D{%M:%S}[%?]'
-        typeset -g RPS1=$'%F{blue}\ue0b2'"%F{white}%K{blue} %D{%M:%S} "$'%F{red}\ue0b2'"%F{black}%K{red} %? %k%f"
+        typeset -g RPS1=$'%F{white}\ue0b2'"%F{black}%K{white} %D{%M:%S} "$'%F{red}\ue0b2'"%F{black}%K{red} %? %k%f"
 #       typeset -g RPS1='$("$POWERLINE_COMMAND" $=POWERLINE_COMMAND_ARGS shell right '$add_args_r2')[%?]'
 #		typeset -g PS2='$("$POWERLINE_COMMAND" $=POWERLINE_COMMAND_ARGS shell left '$add_args_2')'
 #		typeset -g RPS2='$("$POWERLINE_COMMAND" $=POWERLINE_COMMAND_ARGS shell right '$add_args_r2')'
