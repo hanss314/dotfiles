@@ -35,4 +35,3 @@ neofetch
 powerline-daemon -q
 #POWERLINE_DISABLE_RPROMPT="true"
 . $HOME/.config/powerline/themes/shell/powerline.zsh
-

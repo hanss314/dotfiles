@@ -42,11 +42,11 @@
         "function": "powerline_gitstatus.gitstatus",
         "priority": 10
       }
-    ]
+    ],
     "right": [
         {
             "function": "powerline.segments.common.time",
-            "priority", 10
+            "priority": 10
         }
     ]
   }
