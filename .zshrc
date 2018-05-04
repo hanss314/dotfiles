@@ -15,6 +15,9 @@ compinit
 ZLE_RPROMPT_INDENT=0
 alias ls='ls --color=auto'
 export EDITOR=vim
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
 
 TFALIAS='oops'
 eval $(thefuck --alias $TFALIAS)
