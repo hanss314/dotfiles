@@ -300,6 +300,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 bindsym Print exec scrot ~/Pictures/screenshots/%Y-%m-%d-%T-screenshot.png
+bindsym --release Shift+Print exec import -silent "$HOME/Pictures/screenshots/$(date '+%Y-%m-%d-%T')-ss.png"
 bindsym Ctrl+$mod+c exec ~/.config/i3/scripts/clipboard/create
 bindsym Ctrl+$mod+v exec ~/.config/i3/scripts/clipboard/fetch
 
