@@ -156,7 +156,7 @@ _powerline_setup_prompt() {
 		add_args+=' --renderer-arg="client_id=$$"'
 		add_args+=' --renderer-arg="shortened_path=${(%):-%~}"'
 		add_args+=' --jobnum=$_POWERLINE_JOBNUM'
-		add_args+=' --renderer-arg="mode=$_POWERLINE_MODE"'
+#		add_args+=' --renderer-arg="mode=$_POWERLINE_MODE"'
 		add_args+=' --renderer-arg="default_mode=$_POWERLINE_DEFAULT_MODE"'
 		local new_args_2=' --renderer-arg="parser_state=${(%%):-%_}"po'
 		new_args_2+=' --renderer-arg="local_theme=continuation"'
