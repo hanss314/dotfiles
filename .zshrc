@@ -19,6 +19,7 @@ export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 
+alias wifi-menu="sudo wifi-menu"
 TFALIAS='fuck'
 eval $(thefuck --alias $TFALIAS)
 alias crap='$TFALIAS'
